@@ -1,0 +1,104 @@
+                <!-- prices  -->
+                <div class="col-md-6 col-xs-12">
+                    <div class="portlet light bordered">
+
+                        <div class="portlet-title">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase"> هزینه ها</span>
+                        </div>
+                        <div class="portlet-body form">
+                                <form role="form" method="POST" 
+                                    action="<?php echo base_url() . 'settings/update'; ?>">
+                                    <?php foreach($prices->result() as $k=>$v): ?>
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">
+                                                <?php echo $v->description; ?>
+                                            </label>
+                                            <div class="col-md-7">
+                                              <input type="text" 
+                                                    id="<?php echo $v->id; ?>" 
+                                                    name="<?php echo $v->id; ?>" 
+                                                    class="form-control input-sm" 
+                                                    placeholder="قیمت" 
+                                                    value="<?php echo $v->price; ?>">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button class="btn btn-danger delete-price" 
+                                                        data-id="<?php echo $v->id; ?>">delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endforeach; ?>
+                                    
+                                    <div class="form-actions">
+                                        <!-- <button type="submit" class="btn blue">ثبت</button> -->
+                                        <!-- <button type="button" class="btn default">لغو</button> -->
+                                    </div>
+                                </form>
+                                <!-- <button type="button" class="btn btn-default" id="add-new-price">add</button> -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">اضافه</button>
+                        </div>
+
+                    </div>
+                </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-xs-12 col-md-6">
+                    <div class="portlet light bordered">
+                        <div class="portlet-title">
+                            <div class="caption font-red-sunglo">
+                                <i class="icon-settings font-red-sunglo"></i>
+                                <span class="caption-subject bold uppercase">هزینه های متفرقه</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body form">
+                            <form role="form" method="POST" action="<?php echo base_url() . 'users/manage'; ?>">
+                                <input type="hidden" value="<?php echo $customer->cardid;  ?>" name="cardid" id="cardid" />
+                                <input type="hidden" value="<?php echo $customer->id;  ?>" name="id" />
+                                    <select>
+                                        <?php foreach($prices->result() as $v): ?>
+                                                <option value="<?php echo $v->description; ?>">
+                                                    <?php echo $v->description; ?>
+                                                </option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                <div class="form-body">
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">نام</label>
+                                        <div class="col-md-9">
+                                          <input type="text" id="first_name" name="first_name" class="form-control input-sm" placeholder="نام" 
+                                                value="<?php echo $customer->first_name; ?>" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>                    
+                </div> <!-- end services -->
+
+
+
+
+                

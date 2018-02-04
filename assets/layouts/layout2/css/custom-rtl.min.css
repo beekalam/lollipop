@@ -1,0 +1,12 @@
+@font-face{
+ 	font-family:BYekan;
+	src: url(../fonts/BYekan.ttf);
+    src: url(../fonts/BYekan+%20Bold.ttf)
+
+   	}
+	
+	
+	body{
+		 font-family:BYekan !important;
+		
+	}

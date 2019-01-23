@@ -60,8 +60,17 @@ function convert_gregorian_iso_to_jalali_iso($g_iso){
     list($jyear, $jmonth, $jday) = gregorian_to_jalali($year,$month,$day);
     return $jyear."-".$jmonth.'-'.$jday;
 }
-// function convert_jalali_iso_to_gregorian_iso($j_iso){
-// }
+
+function convert_jalali_to_gregorian($date,$seperator='/'){
+    list($year,$month,$day) = explode($seperator,$date);
+    list($year,$month,$day)=JalaliToGregorian($year,$month,$day);
+    if(strlen($day) == 1)
+        $day = '0'.$day;
+    if(strlen($month) == 1)
+        $month = '0'.$month;
+    return "{$year}-{$month}-{$day}";
+}
+
 function JalaliToGregorian($year,$month,$day){
 
     $gDaysInMonth =array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
@@ -123,6 +132,115 @@ function unix_timestamp_to_jalali($in)
     $date_gregorian = date("Y-m-d H:i:s", $in); 
     return convert_gregorian_iso_to_jalali_iso($date_gregorian) . substr($date_gregorian, 10,11);
 }
+
+function jalali_beginning_of_last_month($in=null)
+{
+
+    if(is_null($in))
+        $in = time();
+
+    list($date,$time)       = explode(" ",unix_timestamp_to_jalali($in));
+    list($year,$month,$day) = explode("-",$date);
+    $search = array();
+    $replace= array();
+    foreach(range(1,9) as $k=>$v){
+        $replace[]  = strval($v);
+        $search[] = '0'. $v;
+    }
+
+    $month = str_replace($search,$replace,$month);
+    $day = 1;
+    if(intval($month)==1){
+        $year = intval($year)-1;
+        $month = 12;
+    }else{
+        $month=intVal($month)-1;
+    }
+
+    return "{$year}-{$month}-{$day}";
+}
+function jalali_beginning_of_this_month()
+{
+    list($date,$time)       = explode(" ",unix_timestamp_to_jalali(time()));
+    list($year,$month,$day) = explode("-",$date);
+    $day="01";
+    return "{$year}-{$month}-{$day}";
+}
+
+function jalali_end_of_this_month()
+{
+    list($date,$time) = explode(" ",unix_timestamp_to_jalali(time()));
+    list($year,$month,$day) = explode("-",$date);
+    $search = array();
+    $replace= array();
+    foreach(range(1,9) as $k=>$v){
+        $replace[]  = strval($v);
+        $search[] = '0'. $v;
+    }
+
+    $month = str_replace($search,$replace,$month);
+    $month = intVal($month);
+
+    if($month >=1 && $month <=6)
+    {
+        $day = 31;
+    }else if($month >6 && $month <12){
+        $day = 30;
+    }
+
+    //check leap year
+    if($month == 12){
+        foreach(array(28,29,30) as $v){
+            if(jcheckdate($month,$v,$year)){
+                $day = $v;
+            }
+        }
+    }
+
+    return "{$year}-{$month}-{$day}";    
+}
+
+function jalali_end_of_last_month($in=null)
+{
+    if(is_null($in))
+        $in = time();
+    list($date,$time) = explode(" ",unix_timestamp_to_jalali($in));
+    list($year,$month,$day) = explode("-",$date);
+    $search = array();
+    $replace= array();
+    foreach(range(1,9) as $k=>$v){
+        $replace[]  = strval($v);
+        $search[] = '0'. $v;
+    }
+
+    $month = str_replace($search,$replace,$month);
+    $month = intVal($month);
+    if(intval($month)==1){
+        $year = intval($year)-1;
+        $month = 12;
+    }else{
+        $month=intVal($month)-1;
+    }
+
+    if($month >=1 && $month <=6)
+    {
+        $day = 31;
+    }else if($month >6 && $month <12){
+        $day = 30;
+    }
+
+    //check leap year
+    if($month == 12){
+        foreach(array(28,29,30) as $v){
+            if(jcheckdate($month,$v,$year)){
+                $day = $v;
+            }
+        }
+    }
+
+    return "{$year}-{$month}-{$day}";
+}
+
 
 $year=gmdate("Y");
 $month=gmdate("m");

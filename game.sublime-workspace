@@ -1,0 +1,2033 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get_defined",
+				"get_defined_vars"
+			],
+			[
+				"base",
+				"base64_img_encode\t(utils.php)"
+			],
+			[
+				"phpin",
+				"phpinfo_array"
+			],
+			[
+				"list",
+				"listOfSessions"
+			],
+			[
+				"users",
+				"Users"
+			],
+			[
+				"change-ro",
+				"change-role-modal"
+			],
+			[
+				"changerole",
+				"change-role-modal"
+			],
+			[
+				"msg",
+				"msg_type"
+			],
+			[
+				"set",
+				"set_flashdata"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"num",
+				"num_args"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"defalt",
+				"default_perms\t(perms_map.php)"
+			],
+			[
+				"Use",
+				"Users_model\t(Users.php)"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"perms",
+				"perms_descriptions"
+			],
+			[
+				"is_",
+				"is_ajax"
+			],
+			[
+				"check",
+				"check_perm\t(BaseController.php)"
+			],
+			[
+				"start",
+				"start_from"
+			],
+			[
+				"price",
+				"prices_box\t(_prices.php)"
+			],
+			[
+				"dur",
+				"durations_box\t(_vorodi.php)"
+			],
+			[
+				"pric",
+				"prices_wrapper"
+			],
+			[
+				"phpe",
+				"phpendif\t(phpeif.sublime-snippet)"
+			],
+			[
+				"php",
+				"phpendif\t(phpeif.sublime-snippet)"
+			],
+			[
+				"delete",
+				"delete_btn"
+			],
+			[
+				"chek",
+				"check_perm"
+			],
+			[
+				"edit",
+				"edit_duration"
+			],
+			[
+				"fi",
+				"first_name"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"result",
+				"result_array"
+			],
+			[
+				"total",
+				"total_with_discount\t(Customers.php)"
+			],
+			[
+				"dire",
+				"direction\t(manage.php)"
+			],
+			[
+				"unx",
+				"unix_timestamp_to_jalali"
+			],
+			[
+				"unix",
+				"unix_timestamp_to_jalali\t(Customers.php)"
+			],
+			[
+				"actons",
+				"actions_parser"
+			],
+			[
+				"capt",
+				"capton_class"
+			],
+			[
+				"cap",
+				"capton_class"
+			],
+			[
+				"gregorian",
+				"convert_gregorian_iso_to_jalali_iso"
+			],
+			[
+				"get_comp",
+				"get_compiled_select"
+			],
+			[
+				"last",
+				"lastmonth\t(Customers.php)"
+			],
+			[
+				"jal",
+				"jalali_beginning_of_last_month\t(lib_date.php)"
+			],
+			[
+				"jala",
+				"jalali_beginning_of_this_month\t(lib_date.php)"
+			],
+			[
+				"jalal",
+				"jalali_end_of_this_month\t(lib_date.php)"
+			],
+			[
+				"jalali",
+				"jalali_end_of_last_month\t(lib_date.php)"
+			],
+			[
+				"duration",
+				"duration_search"
+			],
+			[
+				"durat",
+				"duration_search"
+			],
+			[
+				"csv",
+				"csv_export\t(Customers.php)"
+			],
+			[
+				"cust",
+				"customers"
+			],
+			[
+				"card",
+				"card_expire_date"
+			],
+			[
+				"discou",
+				"discounts"
+			],
+			[
+				"discoun",
+				"discounts\t(Settings.php)"
+			],
+			[
+				"disc",
+				"discounts"
+			],
+			[
+				"cus",
+				"customer_id"
+			],
+			[
+				"custo",
+				"customers"
+			],
+			[
+				"discon",
+				"discount-value"
+			],
+			[
+				"new-discoun",
+				"new-discount-validate"
+			],
+			[
+				"new-disc",
+				"new-discount-form"
+			],
+			[
+				"new-dis",
+				"new-discount"
+			],
+			[
+				"vard",
+				"vard\tvard"
+			],
+			[
+				"persian",
+				"persian-number\t(manage.php)"
+			],
+			[
+				"new-user",
+				"new-user-modal"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"مو",
+				"موفقیت"
+			],
+			[
+				"change",
+				"change-password-modal"
+			],
+			[
+				"swa",
+				"swal\t(main.php)"
+			],
+			[
+				"swal",
+				"swal.showInputError(\"You\t(main.php)"
+			],
+			[
+				"last_",
+				"last_name"
+			],
+			[
+				"active",
+				"active_menu"
+			],
+			[
+				"show_",
+				"show_last_factor\t(Customers.php)"
+			],
+			[
+				"activ",
+				"active_customers"
+			],
+			[
+				"mobil",
+				"mobile_number_is_valid\t(utils.php)"
+			],
+			[
+				"extra",
+				"extras_total"
+			],
+			[
+				"show",
+				"show_summary\t(Customers.php)"
+			],
+			[
+				"parse",
+				"parse_persian_date"
+			],
+			[
+				"Jala",
+				"convert_gregorian_iso_to_jalali_iso"
+			],
+			[
+				"from",
+				"from_date"
+			],
+			[
+				"fil",
+				"filter-submit"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"col-",
+				"col-xs-12\t(manage.php)"
+			],
+			[
+				"get_co",
+				"get_compiled_select\t(DB_query_builder.php)"
+			],
+			[
+				"new",
+				"new-category"
+			],
+			[
+				"new-c",
+				"new-category-validate"
+			],
+			[
+				"new-ca",
+				"new-category"
+			],
+			[
+				"ca",
+				"categories-table"
+			],
+			[
+				"valid",
+				"validate_category_remove"
+			],
+			[
+				"sty",
+				"style\tTag"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"ch",
+				"checkin"
+			],
+			[
+				"cu",
+				"customers"
+			],
+			[
+				"diff",
+				"diff_gt_max"
+			],
+			[
+				"format",
+				"formatDuration"
+			],
+			[
+				"du",
+				"duration_parts"
+			],
+			[
+				"voro",
+				"vorodi-duration"
+			],
+			[
+				"rel",
+				"rel=\"stylesheet\t(header.php)"
+			],
+			[
+				"boo",
+				"bootstrap-timepicker"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"json_",
+				"json_res"
+			],
+			[
+				"delte",
+				"delete\t(manage.php)"
+			],
+			[
+				"vo",
+				"vorodi-action"
+			],
+			[
+				"alert",
+				"alert-danger\t(main.php)"
+			],
+			[
+				"new-",
+				"new-vorodi-submit"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"is_aja",
+				"is_ajax_post"
+			],
+			[
+				"setti",
+				"settings"
+			],
+			[
+				"vorodi-",
+				"vorodi-duration\t(settings.php)"
+			],
+			[
+				"vorodi",
+				"vorodi-duration\t(settings.php)"
+			],
+			[
+				"fu",
+				"fun\tfunction …"
+			],
+			[
+				"column",
+				"columnDefs"
+			],
+			[
+				"col",
+				"columns\t(customers2.php)"
+			],
+			[
+				"chec",
+				"checkin\t(Customers_model.php)"
+			],
+			[
+				"custom",
+				"customers"
+			],
+			[
+				"c",
+				"customers"
+			],
+			[
+				"log",
+				"log_message\t(Settings.php)"
+			],
+			[
+				"chc",
+				"checkout"
+			],
+			[
+				"manage",
+				"manage?id\t(Users.php)"
+			],
+			[
+				"baes",
+				"base_url"
+			],
+			[
+				"table",
+				"table-striped\t(settings.php)"
+			],
+			[
+				"modal-fac",
+				"modal-factor-body"
+			],
+			[
+				"modal-f",
+				"modal-factor"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"succ",
+				"success\t(manage.php)"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"dele",
+				"delete_btn"
+			],
+			[
+				"customer",
+				"customer_id\t(Users.php)"
+			],
+			[
+				"P",
+				"_POST"
+			],
+			[
+				"item",
+				"item-price"
+			],
+			[
+				"pri",
+				"price"
+			],
+			[
+				"var",
+				"vard\tvard"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/controllers/Customers.php",
+			"settings":
+			{
+				"buffer_size": 23832,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/users/users.php",
+			"settings":
+			{
+				"buffer_size": 16496,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/users/roles.php",
+			"settings":
+			{
+				"buffer_size": 14037,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/BaseController.php",
+			"settings":
+			{
+				"buffer_size": 2588,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/Users.php",
+			"settings":
+			{
+				"buffer_size": 10384,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/Settings.php",
+			"settings":
+			{
+				"buffer_size": 10001,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/Customers_model.php",
+			"settings":
+			{
+				"buffer_size": 8257,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/dashboard/main.php",
+			"settings":
+			{
+				"buffer_size": 5176,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/footer.php",
+			"settings":
+			{
+				"buffer_size": 9020,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 72.0,
+		"last_filter": "install pacage",
+		"selected_items":
+		[
+			[
+				"install pacage",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"fold",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"setsyphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntaxgo",
+				"Set Syntax: Go"
+			],
+			[
+				"syntaxpyth",
+				"Set Syntax: Python"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			],
+			[
+				"syntaxorg",
+				"Set Syntax: orgmode"
+			],
+			[
+				"syntphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"run",
+				"Build With: C++ Single File - Run"
+			],
+			[
+				"gitbranc",
+				"Git: Change Branch"
+			],
+			[
+				"prettif",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"packagecontrollist",
+				"Package Control: List Packages"
+			],
+			[
+				"package control:list",
+				"Package Control: List Packages"
+			],
+			[
+				"listpackage",
+				"Package Control: List Packages"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/xampp/htdocs/lollipop"
+	],
+	"file_history":
+	[
+		"/D/xampp/htdocs/game/application/helpers/perms_map.php",
+		"/home/moh/src/fana/game/application/views/customers/sales.php",
+		"/home/moh/src/fana/game/application/controllers/Users.php",
+		"/home/moh/src/fana/game/application/views/footer.php",
+		"/home/moh/src/fana/game/assets/global/scripts/app.js",
+		"/home/moh/src/fana/game/application/controllers/Tmp.php",
+		"/home/moh/src/fana/game/application/helpers/utils.php",
+		"/home/moh/src/fana/game/application/models/Customers_model.php",
+		"/home/moh/src/fana/game/application/views/settings/settings.php",
+		"/home/moh/workspace/doctorine-test/show_product.php",
+		"/home/moh/workspace/doctorine-test/src/cli-config.php",
+		"/home/moh/workspace/doctorine-test/src/Product.php",
+		"/home/moh/workspace/doctorine-test/src/bootstrap.php",
+		"/home/moh/src/fana/game/application/views/users/users.php",
+		"/home/moh/src/fana/game/application/views/header.php",
+		"/home/moh/src/fana/game/application/controllers/BaseController.php",
+		"/home/moh/src/fana/game/db.sql",
+		"/home/moh/src/fana/game/sftp-config.json",
+		"/home/moh/src/fana/game/assets/mansouri.css",
+		"/home/moh/src/fana/game/application/config/config.php",
+		"/home/moh/src/farahoosh/xbs-reseller/ui/js/JavaScript-Load-Image/js/load-image.js",
+		"/home/moh/src/farahoosh/xbs/ui/ux_vendor/ashkan/ab1168.js",
+		"/home/moh/src/farahoosh/shahkar-api/app/utils.php",
+		"/home/moh/src/fana/game/application/views/dashboard/main.php",
+		"/home/moh/src/fana/game/application/views/customers/customers.php",
+		"/home/moh/src/fana/game/application/views/login.php",
+		"/home/moh/src/fana/game/application/views/users/roles.php",
+		"/home/moh/src/fana/game/system/libraries/Session/Session.php",
+		"/home/moh/src/fana/game/application/controllers/Customers.php",
+		"/home/moh/src/fana/game/application/helpers/perms_map.php",
+		"/home/moh/src/fana/game/application/controllers/Dashboard.php",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=c$/xampp/htdocs/game/application/models/Customers_model.php",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=c$/xampp/htdocs/game/application/models/Users_model.php",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=c$/xampp/htdocs/game/application/config/database.php",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=c$/xampp/htdocs/game/application/views/welcome_message.php",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=c$/xampp/htdocs/game/.htaccess",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=game/index.php",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=game/.htaccess",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=game/application/config/config.php",
+		"/run/user/1000/gvfs/smb-share:server=park-pc,share=game/application/controllers/Login.php",
+		"/home/moh/src/fana/game/application/controllers/Login.php",
+		"/home/moh/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/moh/opt/opengrok/etc/configuration.xml",
+		"/home/moh/opt/opengrok/etc/web.xml",
+		"/var/opengrok/etc/configuration.xml",
+		"/home/moh/src/fana/game/application/views/no-access.php",
+		"/home/moh/src/fana/game/system/core/Controller.php",
+		"/home/moh/src/fana/game/application/views/settings/_prices.php",
+		"/home/moh/src/fana/game/application/views/settings/_vorodi.php",
+		"/home/moh/src/fana/game/assets/js/mansouri.js",
+		"/home/moh/src/fana/game/application/views/settings/_discounts.php",
+		"/home/moh/.config/sublime-text-3/Packages/User/phpeif.sublime-snippet",
+		"/home/moh/src/fana/game/application/views/settings/_categories.php",
+		"/home/moh/src/fana/game/application/views/dashboard/partials/_present_customers.php",
+		"/home/moh/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/moh/.config/sublime-text-3/Packages/ExtendedSwitcher/Default (Linux).sublime-keymap",
+		"/home/moh/.config/sublime-text-3/Packages/ExtendedSwitcher/ExtendedSwitcher.sublime-settings",
+		"/home/moh/src/fana/game/application/views/dashboard/partials/_user_summary.php",
+		"/home/moh/src/fana/game/application/views/customers/partials/_user_actions.php",
+		"/home/moh/src/fana/game/application/views/customers/manage.php",
+		"/home/moh/src/fana/game/application/views/dashboard/partials/_add_customer.php",
+		"/home/moh/src/fana/game/application/views/customers/partials/_history.php",
+		"/home/moh/src/fana/game/application/views/_trash/_old_vorodi.php",
+		"/home/moh/src/fana/game/application/views/customers/partials/_extra_services.php",
+		"/home/moh/src/fana/game/application/views/customers/partials/_user_extra_services.ph",
+		"/home/moh/src/fana/game/application/views/_partials/_portlet_start.php",
+		"/home/moh/src/fana/game/application/views/_trash/customers.php",
+		"/home/moh/src/fana/game/system/database/DB_query_builder.php",
+		"/home/moh/src/fana/game/application/libraries/lib_date.php",
+		"/home/moh/src/fana/game/system/core/Input.php",
+		"/home/moh/.config/sublime-text-3/Packages/SFTP/schemes/Mac Classic.sftpTheme",
+		"/home/moh/.config/sublime-text-3/Packages/User/Color Scheme - Default/Monokai2.tmTheme",
+		"/home/moh/.config/sublime-text-3/Packages/User/Default.sublime-theme",
+		"/home/moh/Downloads/Monokai.tmTheme",
+		"/home/moh/.config/sublime-text-3/Packages/SFTP/schemes/Monokai Bright.sftpTheme",
+		"/home/moh/.config/sublime-text-3/Cache/Color Scheme - Default/Monokai Bright.tmTheme.cache",
+		"/home/moh/src/fana/game/system/database/DB_result.php",
+		"/home/moh/src/fana/game/application/libraries/Jalali_date.php",
+		"/home/moh/src/fana/game/application/controllers/Settings.php",
+		"/home/moh/src/fana/game/application/views/customers/factor.php",
+		"/home/moh/src/fana/game/application/libraries/html.php",
+		"/home/moh/src/fana/game/application/libraries/html",
+		"/home/moh/src/fana/game/application/views/users/profile.php",
+		"/home/moh/src/fana/game/application/models/Settings_model.php",
+		"/home/moh/src/fana/game/application/views/customers/customers2.php",
+		"/home/moh/src/fana/game/assets/global/scripts/datatable.js",
+		"/usr/bin/vit",
+		"/usr/share/doc/vit/commands",
+		"/home/moh/src/fana/game/application/views/customers/dashboard.php",
+		"/home/moh/src/fana/game/system/core/Loader.php",
+		"/home/moh/src/fana/game/system/database/DB_driver.php",
+		"/home/moh/src/fana/game/application/views/settings/_old_vorodi.php",
+		"/home/moh/src/fana/game/application/views/user/dashboard.php",
+		"/home/moh/src/fana/game/application/views/user/sales.php",
+		"/home/moh/src/fana/game/application/views/user/new_customer.php",
+		"/home/moh/src/fana/game/application/views/user/manage.php",
+		"/home/moh/src/fana/game/application/views/user/customers2.php",
+		"/home/moh/src/fana/game/application/views/user/customers.php",
+		"/home/moh/src/fana/game/application/views/user/factor.php",
+		"/home/moh/src/fana/game/application/views/_trash_",
+		"/home/moh/src/fana/game/application/models/Users_model.php",
+		"/home/moh/src/fana/game/system/helpers/form_helper.php",
+		"/home/moh/src/fana/game/application/views/dashboard/header.php",
+		"/home/moh/src/fana/game/application/views/dashboard/footer.php",
+		"/home/moh/.config/sublime-text-3/Packages/User/pagecontent.sublime-snippet",
+		"/home/moh/src/fana/game/assets/global/plugins/bootstrap-sweetalert/sweetalert.css",
+		"/home/moh/src/fana/game/system/helpers/url_helper.php",
+		"/home/moh/src/fana/game/system/core/Common.php",
+		"/home/moh/src/fana/game/application/libraries/Libdate.php",
+		"/home/moh/src/fana/game/application/libraries/libdate.php",
+		"/home/moh/src/fana/game/application/config/routes.php",
+		"/home/moh/src/fana/game/application/views/dashboard/dashboard_header.php",
+		"/home/moh/src/fana/vaziri/vaziri (1).sql",
+		"/home/moh/src/fana/game/system/core/Config.php",
+		"/home/moh/src/fana/game/application/config/database.php",
+		"/home/moh/src/fana/game/application/controllers/Test.php",
+		"/home/moh/src/fana/game/application/views/Auth/login.php",
+		"/home/moh/src/fana/game/application/controllers/Auth.php",
+		"/home/moh/src/code-igniter/CodeIgniter/system/core/CodeIgniter.php",
+		"/home/moh/tmp/pyrad/example/acct.py",
+		"/home/moh/tmp/pyrad/example/auth.py",
+		"/etc/tor/torrc",
+		"/tmp/test.js",
+		"/home/moh/bin/firewalk",
+		"/home/moh/PPPoESession.py",
+		"/tmp/test.go",
+		"/tmp/test.py",
+		"/home/moh/Documents/notes/ceh.org"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 113.0,
+		"where_history":
+		[
+			"<project>",
+			"/home/moh/src/fana/game/system",
+			"<project>",
+			"/home/moh/src/fana/game/application",
+			"/home/moh/src/fana/game/application/views",
+			"/home/moh/src/fana/game/",
+			"/home/moh/src/fana/game/application/views",
+			"<project>",
+			"/home/moh/src/splynx/splynx",
+			"/var/www/html/phpapp",
+			"/var/www/html/xbs",
+			"/var/www/html/fatfree/fatfree",
+			"/var/www/html/XBS_GUI_PHP",
+			"/home/moh/src/net-prog/Remmina",
+			"/home/moh/src/net-prog",
+			"/home/moh/src/net-prog/free-radius/freeradius-1.1.8",
+			"/var/www/html",
+			"/home/moh/farahoosh/XBS_GUI/XBS_GUI_PHP",
+			"/home/moh/src/unix-network-programming",
+			"/home/moh/farahoosh/XBS_GUI/XBS_GUI_PHP",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"9",
+			"perms",
+			"$this->load->library",
+			"datepicker",
+			"db->delete",
+			"summary",
+			"table-summary",
+			"FileReader",
+			"picture",
+			"upload",
+			"کنسل",
+			"confg",
+			"user_id_role_form",
+			"roles",
+			"change_role",
+			"is_admin",
+			"var roles",
+			"new-user",
+			"new-user-modal",
+			"new",
+			"new-user",
+			"set_flashdata",
+			"true",
+			"false",
+			"/var",
+			"false",
+			"change_settings",
+			"or ",
+			"or return",
+			"sm",
+			"pff",
+			"',",
+			"false);",
+			"$this->session->set_userdata(",
+			"currency(",
+			"pr",
+			"unset_",
+			"pclass",
+			"output",
+			"from_date",
+			"clear_search",
+			"sales",
+			"backgroun",
+			"caret",
+			"insert",
+			"update",
+			"rfid",
+			"join",
+			"customers",
+			"view-factor2",
+			"category",
+			"init(",
+			"icon",
+			"enable",
+			"log",
+			"gregorian_iso_to",
+			"btn",
+			"فاکتور",
+			"btn-s",
+			"btn",
+			"settings",
+			"vorodi-price",
+			"panel",
+			"actions",
+			"تومان",
+			"style",
+			"jjj",
+			"sha",
+			"db->update(",
+			"dataTable",
+			"language",
+			"actions",
+			"get_customer",
+			"checkout",
+			"manage",
+			"submit",
+			"manage",
+			"sss",
+			"mobile_num",
+			"sss",
+			"transac",
+			"picker",
+			"  ",
+			"picker",
+			"is_search",
+			"$is_search",
+			"add_category",
+			"insert(",
+			"form[0]",
+			"modal",
+			"new-category",
+			"error",
+			"get_where",
+			"categor",
+			"get_customer",
+			"start",
+			"GregorianToJD",
+			"jalali",
+			"vorodi",
+			"final",
+			"add-new-du",
+			"add-new",
+			"picker",
+			"manage",
+			"users/",
+			"swal(",
+			"update(",
+			"row",
+			"load->lib",
+			"'input'",
+			"exception",
+			"customer-id",
+			"add-user-ex",
+			"set_flash",
+			"get_where",
+			"loading",
+			"loadingMessage",
+			"get_where",
+			"unix_",
+			"rfid",
+			"$mobile",
+			"mobile",
+			"$",
+			"voro",
+			"$diff",
+			"category-select",
+			"add-new-price",
+			"picker"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"1",
+			"''",
+			"true",
+			"xs",
+			"' => false,",
+			"'=>false",
+			"",
+			",",
+			"portlet_class",
+			"ریال",
+			"price-select",
+			"modal",
+			"",
+			"any",
+			"",
+			"type=\"text\"",
+			"\n",
+			"\"",
+			":\n",
+			":\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/Customers.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23832,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 372.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/views/users/users.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14402,
+								14402
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5727.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/views/users/roles.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5285,
+								5285
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/controllers/BaseController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								628,
+								628
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/controllers/Users.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3476,
+								3476
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1977.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/controllers/Settings.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "application/models/Customers_model.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 8257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/views/dashboard/main.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "application/views/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 560.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 113.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 47.0
+	},
+	"pinned_build_system": "",
+	"project": "game.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"basecon",
+				"application\\controllers\\BaseController.php"
+			],
+			[
+				"users",
+				"application\\controllers\\Users.php"
+			],
+			[
+				"perms",
+				"application\\helpers\\perms_map.php"
+			],
+			[
+				"roles",
+				"application\\views\\users\\roles.php"
+			],
+			[
+				"user",
+				"application\\controllers\\Users.php"
+			],
+			[
+				"footer",
+				"application/views/footer.php"
+			],
+			[
+				"app.js",
+				"assets/global/scripts/app.js"
+			],
+			[
+				"setting",
+				"application/views/settings/settings.php"
+			],
+			[
+				"settings",
+				"application/controllers/Settings.php"
+			],
+			[
+				"tmp",
+				"application/controllers/Tmp.php"
+			],
+			[
+				"utils",
+				"application/helpers/utils.php"
+			],
+			[
+				"hea",
+				"application/views/header.php"
+			],
+			[
+				"tmp.",
+				"application/controllers/Tmp.php"
+			],
+			[
+				"sftp",
+				"sftp-config.json"
+			],
+			[
+				"sftpcon",
+				"sftp-config.json"
+			],
+			[
+				"header",
+				"application/views/header.php"
+			],
+			[
+				"custom",
+				"application/controllers/Customers.php"
+			],
+			[
+				"config",
+				"application/config/config.php"
+			],
+			[
+				"login",
+				"application/controllers/Login.php"
+			],
+			[
+				"_addc",
+				"application/views/dashboard/partials/_add_customer.php"
+			],
+			[
+				"uti",
+				"application/helpers/utils.php"
+			],
+			[
+				"heaer",
+				"application/views/header.php"
+			],
+			[
+				"cusm",
+				"application/models/Customers_model.php"
+			],
+			[
+				"perms_m",
+				"application/helpers/perms_map.php"
+			],
+			[
+				"head",
+				"application/views/header.php"
+			],
+			[
+				"das",
+				"application/controllers/Dashboard.php"
+			],
+			[
+				"permsm",
+				"application/helpers/perms_map.php"
+			],
+			[
+				"custommo",
+				"application/models/Customers_model.php"
+			],
+			[
+				"usersmo",
+				"application/models/Users_model.php"
+			],
+			[
+				"customrsmo",
+				"application/models/Customers_model.php"
+			],
+			[
+				"customersm",
+				"application/models/Customers_model.php"
+			],
+			[
+				"usersm",
+				"application/models/Users_model.php"
+			],
+			[
+				"logi",
+				"application/controllers/Login.php"
+			],
+			[
+				"",
+				"application/controllers/BaseController.php"
+			],
+			[
+				"custo",
+				"application/controllers/Customers.php"
+			],
+			[
+				"mansou",
+				"assets/js/mansouri.js"
+			],
+			[
+				"sales",
+				"application/views/customers/sales.php"
+			],
+			[
+				"foo",
+				"application/views/footer.php"
+			],
+			[
+				"customermo",
+				"application/models/Customers_model.php"
+			],
+			[
+				"date",
+				"application/libraries/lib_date.php"
+			],
+			[
+				"jdate",
+				"application/libraries/Jalali_date.php"
+			],
+			[
+				"main",
+				"application/views/dashboard/main.php"
+			],
+			[
+				"customers",
+				"application/controllers/Customers.php"
+			],
+			[
+				"_cate",
+				"application/views/settings/_categories.php"
+			],
+			[
+				"customersmo",
+				"application/models/Customers_model.php"
+			],
+			[
+				"loginphp",
+				"application/views/login.php"
+			],
+			[
+				"login.php",
+				"application/controllers/Login.php"
+			],
+			[
+				"app.",
+				"assets/global/scripts/app.js"
+			],
+			[
+				"facto",
+				"application/views/customers/factor.php"
+			],
+			[
+				"cuso",
+				"application/controllers/Customers.php"
+			],
+			[
+				"cus",
+				"application/controllers/Customers.php"
+			],
+			[
+				"customer",
+				"application/views/_trash/customers.php"
+			],
+			[
+				"factor",
+				"application/views/customers/factor.php"
+			],
+			[
+				"_pri",
+				"application/views/settings/_prices.php"
+			],
+			[
+				"_vo",
+				"application/views/settings/_vorodi.php"
+			],
+			[
+				"settingh",
+				"application/views/settings/settings.php"
+			],
+			[
+				"set",
+				"application/controllers/Settings.php"
+			],
+			[
+				"_voro",
+				"application/views/settings/_vorodi.php"
+			],
+			[
+				"heder",
+				"application/views/header.php"
+			],
+			[
+				"datatab",
+				"assets/global/scripts/datatable.js"
+			],
+			[
+				"foot",
+				"application/views/footer.php"
+			],
+			[
+				"price",
+				"application/views/settings/_prices.php"
+			],
+			[
+				"util",
+				"application/helpers/utils.php"
+			],
+			[
+				"heade",
+				"application/views/header.php"
+			],
+			[
+				"basec",
+				"application/controllers/BaseController.php"
+			],
+			[
+				"manage",
+				"application/views/customers/manage.php"
+			],
+			[
+				"baseo",
+				"application/controllers/BaseController.php"
+			],
+			[
+				"basecont",
+				"application/controllers/BaseController.php"
+			],
+			[
+				"trash",
+				"application/views/_trash_"
+			],
+			[
+				"libdate",
+				"application/libraries/lib_date.php"
+			],
+			[
+				"settingsmo",
+				"application/models/Settings_model.php"
+			],
+			[
+				"settingmod",
+				"application/models/Settings_model.php"
+			],
+			[
+				"fo",
+				"application/views/footer.php"
+			],
+			[
+				"sweet",
+				"assets/global/plugins/bootstrap-sweetalert/sweetalert.css"
+			],
+			[
+				"lib_",
+				"application/libraries/lib_date.php"
+			],
+			[
+				"jalalid",
+				"application/libraries/Jalali_date.php"
+			],
+			[
+				"routes",
+				"application/config/routes.php"
+			],
+			[
+				"config.pp",
+				"application/config/config.php"
+			],
+			[
+				"corecodeigniter",
+				"CodeIgniter/system/core/CodeIgniter.php"
+			],
+			[
+				"python.md",
+				"python.md"
+			],
+			[
+				"python",
+				"python.org"
+			],
+			[
+				"go.",
+				"go.md"
+			],
+			[
+				"self",
+				"self.org"
+			],
+			[
+				"ceh",
+				"ceh.org"
+			],
+			[
+				"go",
+				"go.md"
+			],
+			[
+				"lin",
+				"links.org"
+			],
+			[
+				"network",
+				"network.org"
+			],
+			[
+				"cpp",
+				"cpp.org"
+			],
+			[
+				"php.",
+				"php.org"
+			],
+			[
+				"javas",
+				"javascript.org"
+			],
+			[
+				"sql",
+				"sql.md"
+			],
+			[
+				"links",
+				"links.org"
+			],
+			[
+				"ubunt",
+				"ubuntu.org"
+			],
+			[
+				"bash",
+				"bash.org"
+			],
+			[
+				"test.py",
+				"/tmp/test.py"
+			],
+			[
+				"scap",
+				"scapy.md"
+			],
+			[
+				"php",
+				"php.org"
+			],
+			[
+				"md",
+				"experiments.md"
+			],
+			[
+				"link",
+				"links.org"
+			],
+			[
+				"net",
+				"network.org"
+			],
+			[
+				"persi",
+				"views/persiansites.jade"
+			],
+			[
+				"layout",
+				"views/layout.jade"
+			],
+			[
+				"index.",
+				"views/index.jade"
+			],
+			[
+				"server",
+				"server.js"
+			],
+			[
+				"col",
+				"collector.js"
+			],
+			[
+				"layou",
+				"views/layout.jade"
+			],
+			[
+				"tm",
+				"tmp"
+			],
+			[
+				"index",
+				"views/index.jade"
+			],
+			[
+				"php.org",
+				"php.org"
+			],
+			[
+				"udpcksu",
+				"udpcksum/udpcksum.c"
+			],
+			[
+				"base.php",
+				"vendor/bcosca/fatfree/lib/base.php"
+			],
+			[
+				"base",
+				"templates/base64-encode-decode.htm"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				".hta",
+				".htaccess"
+			],
+			[
+				"generators",
+				"app/Controllers/Generators.php"
+			],
+			[
+				"generator",
+				"app/Controllers/Generators.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"package.php",
+				"ui/views/reseller/package.php"
+			],
+			[
+				"package",
+				"app/Controllers/PackageController.php"
+			],
+			[
+				"usercontrol",
+				"app/Controllers/UserController.php"
+			],
+			[
+				"usercon",
+				"app/Controllers/UserController.php"
+			],
+			[
+				"createuser",
+				"ui/views/reseller/createuser.htm"
+			],
+			[
+				"pack",
+				"app/Controllers/PackageController.php"
+			],
+			[
+				"packagecon",
+				"app/Controllers/PackageController.php"
+			],
+			[
+				"api",
+				"lib/apiClient.php"
+			],
+			[
+				"pa",
+				"app/Controllers/PackageController.php"
+			],
+			[
+				"init",
+				"lib/initmonolog.php"
+			],
+			[
+				"right",
+				"ui/views/rightmenu.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "real\t",
+		"selected_items":
+		[
+			[
+				"real\t",
+				"D:\\xampp\\htdocs\\realestate\\real-estate.sublime-project"
+			],
+			[
+				"",
+				"D:\\xampp\\htdocs\\realstate\\real-estate.sublime-project"
+			],
+			[
+				"tour",
+				"~/src/fana/tour/tour.sublime-project"
+			],
+			[
+				"utils",
+				"~/src/php-js-css-utils/php-js-css-utils.sublime-project"
+			],
+			[
+				"xbsres",
+				"~/Documents/notes/xbs-reseller.sublime-project"
+			],
+			[
+				"fara",
+				"~/farahoosh/XBS_GUI/app/xbs_gui.sublime-workspace"
+			],
+			[
+				"no",
+				"~/src/fara-node/node-netflow/node-netflow.sublime-project"
+			],
+			[
+				"node",
+				"~/src/fara-node/node-netflow/node-netflow.sublime-project"
+			],
+			[
+				"notes",
+				"~/Documents/notes/notes.sublime-project"
+			],
+			[
+				"ui",
+				"~/src/fara-node/node-netflow-ui/node-netflow-ui.sublime-project"
+			],
+			[
+				"test",
+				"~/Documents/sublime-projects/testproject.sublime-project"
+			],
+			[
+				"xbsad",
+				"~/Documents/sublime-projects/xbs-admin.sublime-project"
+			],
+			[
+				"xbs",
+				"~/Documents/sublime-projects/xbs.sublime-project"
+			],
+			[
+				"compe",
+				"~/src/phpprojects/competitve-programming/competitive-programming.sublime-project"
+			],
+			[
+				"admin",
+				"~/Documents/sublime-projects/xbs-admin.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"ADODB2_sqlite"
+			]
+		],
+		"width": 898.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 166.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

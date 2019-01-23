@@ -2,25 +2,37 @@
     <!-- BEGIN CONTENT BODY -->
     <div class="page-content">
         <!-- BEGIN PAGE HEADER-->
-                
             <div class="page-bar"></div>
             <div class="row">
                   <div class="col-md-12">
                     <div class="portlet box blue-hoki">
-                        <div class="portlet-title">لیست فروش</div>
+                        <div class="portlet-title">
+                          <div class="caption">  
+                             <i class="icon-bubbles"></i> لیست فروش
+                          </div>
+                          <div class="actions">
+                            
+                            <a href="<?php echo base_url('customers/sales_search?duration=thismonth'); ?>"
+                               class="btn btn-default btn-sm btn-circle">
+                                <!-- <i class="fa fa-plus"></i> -->
+                                گزارش این ماه
+                            </a>
+
+                            <a href="<?php echo base_url('customers/sales_search?duration=lastmonth'); ?>"
+                               class="btn btn-default btn-sm btn-circle">
+                                <!-- <i class="fa fa-plus"></i> -->
+                                گزارش ماه گذشته
+                            </a>
+
+                            <a href="<?php echo base_url('customers/sales_csv_export'); ?>"
+                               class="btn btn-default btn-sm btn-circle">
+                                <i class="fa fa-file-excel-o"></i>خروجی اکسل
+                            </a>
+
+                          </div>
+
+                        </div>
                         <div class="portlet-body">
-                            <!-- <div class="portlet-toolbar">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="btn-group">
-                                            <button  class="btn sbold green">
-                                              <?php //echo anchor('customers/add','تعریف کاربر'); ?>
-                                                <i class="fa fa-plus"></i>
-                                            </button>
-                                        </div>
-                                    </div>    
-                                </div>
-                            </div> -->
                           
                           <table border="0" class="table table-responsive table-bordered table-striped" 
                                 id="customers-table">
@@ -30,10 +42,6 @@
                                     <td>مدت حضور</td>
                                     <th>تاریخ</th>
                                     <th>نام</th>
-                                    <!-- <td>mobile</td> -->
-                                    <!-- <td>actions</td> -->
-                                    <!-- <td>مدت</td> -->
-                                    <!-- <td>هزینه</td> -->
                                     <th>عملیات</th>
                                 </tr>
                                 <tr role="filter">
@@ -43,7 +51,7 @@
                                       <div class="row">
                                           <div class="col-xs-6">
                                             <div class="input-group">
-                                                <input type="text" class="form-control form-filter input-sm" readonly="" name="from_date" id="from_date" placeholder="From"
+                                                <input type="text" class="form-control form-filter input-sm" readonly="" name="from_date" id="from_date" placeholder="از تاریخ"
                                                  value="<?php @eisset($from_date); ?>">
                                                 <span class="input-group-btn">
                                                     <button class="btn btn-sm default" type="button">
@@ -54,7 +62,7 @@
                                           </div>
                                           <div class="col-xs-6">
                                             <div class="input-group" >
-                                                <input type="text" class="form-control form-filter input-sm" readonly="" name="to_date" id="to_date" placeholder="To"
+                                                <input type="text" class="form-control form-filter input-sm" readonly="" name="to_date" id="to_date" placeholder="تا تاریخ"
                                                  value="<?php @eisset($to_date); ?>">
                                                 <span class="input-group-btn">
                                                     <button class="btn btn-sm default" type="button">
@@ -68,20 +76,20 @@
                                   <td></td>
                                   <td>
                                     <div class="margin-bottom-5">
-                                      <button class="btn btn-sm green btn-outline filter-submit margin-bottom">
-                                          <i class="fa fa-search"></i> Search</button>
+                                      <button class="btn btn-sm green btn-outline filter-submit btn-circle margin-bottom">
+                                          <i class="fa fa-search"></i> جستجو</button>
                                     </div>
                                   </td>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="persian-number">
                                
                             </tbody>
                           </table>
                           <div class="alert alert-warning" id="summary" style='display:none;'>
                           </div>
 
-                                      <div class="modal fade" tabindex="-1" id="modal-factor" role="dialog" 
+          <div class="modal fade" tabindex="-1" id="modal-factor" role="dialog" 
                  aria-labelledby="modalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -122,8 +130,9 @@
                                   .on('xhr.dt',function(e,settings, json, xhr){
                                     // console.log(json);
                                     if(json["show_summary"]){
+                                      if(!json["sum"]) json["sum"]=0;
                                       var line = "مجموع: ";
-                                       line += json["sum"] + " تومان";
+                                       line +=  "<span class='persian-number'>" + number_format(json["sum"]) + " ریال" + "</span>";
                                       $("#summary").html(line);
                                       $("#summary").show();
                                     }
@@ -131,7 +140,7 @@
                                   .DataTable({
                                       "bScrollInfinite": true,
                                       "ordering":false,
-                                      "searching":false,
+                                      "searching":true,
                                       // "bScrollCollapse": true,
                                      // "sScrollY": "200px",
                                       // "pageLength": 10,
@@ -143,6 +152,30 @@
                                     ajax:{
                                         "url":"<?php echo base_url() ?>/customers/sales_list",
                                         "type":"POST"
+                                    },
+    
+                                    "language": {
+                                        "sEmptyTable":     "هیچ داده ای در جدول وجود ندارد",
+                                        "sInfo":           "نمایش _START_ تا _END_ از _TOTAL_ رکورد",
+                                        "sInfoEmpty":      "نمایش 0 تا 0 از 0 رکورد",
+                                        "sInfoFiltered":   "(فیلتر شده از _MAX_ رکورد)",
+                                        "sInfoPostFix":    "",
+                                        "sInfoThousands":  ",",
+                                        "sLengthMenu":     "نمایش _MENU_ رکورد",
+                                        "sLoadingRecords": "در حال بارگزاری...",
+                                        "sProcessing":     "در حال پردازش...",
+                                        "sSearch":         "جستجو:",
+                                        "sZeroRecords":    "رکوردی با این مشخصات پیدا نشد",
+                                        "oPaginate": {
+                                          "sFirst":    "ابتدا",
+                                          "sLast":     "انتها",
+                                          "sNext":     "بعدی",
+                                          "sPrevious": "قبلی"
+                                        },
+                                        "oAria": {
+                                          "sSortAscending":  ": فعال سازی نمایش به صورت صعودی",
+                                          "sSortDescending": ": فعال سازی نمایش به صورت نزولی"
+                                        }
                                     },
                                     "columnDefs":[
                                         {
@@ -178,7 +211,7 @@
                                           "data":"first_name",
                                           "render":function(data, type, row, meta){
                                               // return row["first_name"] + " " + row["last_name"];
-                                              var ret =  "<button class='btn btn-sm btn-success show-factor' ";
+                                              var ret =  "<button class='btn btn-sm btn-success btn-circle show-factor' ";
                                                   ret += " data-id='" + row['id'] + "' ";
                                                   ret += ">فاکتور </button>";
                                               return ret;
@@ -212,6 +245,12 @@
                                             }); //$.ajax     
                                     }); 
 
+
+                                  $(document).on('keypress','.dataTables_filter .form-control',
+                                    function(e)
+                                    {
+                                      $("#summary").hide();
+                                    });
 
                                    $("#from_date").datepicker(
                                     {

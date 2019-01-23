@@ -1,12 +1,14 @@
-<div class="portlet box blue-hoki">
+<div class="portlet box blue-hoki" id="durations_box">
     <div class="portlet-title">
         <div class="caption">
             <i class="fa fa-cogs"></i>بازه های زمانی
         </div>
         <div class="actions">
-            <a href="javascript:;"
-               class="btn btn-default btn-sm" id="new-vorodi">
-                <i class="fa fa-plus"></i>بازه جدید</a>
+            <?php if(check_perm('add_duration')): ?>
+                <a href="javascript:;" class="btn btn-default btn-sm" id="new-vorodi">
+                    <i class="fa fa-plus"></i>بازه جدید
+                </a>
+            <?php endif; ?>
         </div>
     </div>
     <div class="portlet-body">
@@ -19,21 +21,26 @@
                 <th class="no-sort">عملیات</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody class="persian-number">
             <?php
             foreach ($vorodi as $v) 
             {
+
+                $tooltip=" data-toggle='tooltip' title='" . formatDuration($v->duration) ."'";
+                $duration = substr(formatDuration($v->duration),0,5);
+
                 echo "<tr>";
-                echo "<td>{$v->description}</td>";
+                    et("td", $v->description);
+                    et("td", "<span". $tooltip . ">". $duration  . "</span>");
+                    et("td", format_currency($v->price,""));
+                // echo "<td>{$v->price}</td>";
                 echo "<td>";
-                        $tooltip=" data-toggle='tooltip' title='" . formatDuration($v->duration) ."'";
-                        $duration = substr(formatDuration($v->duration),0,5);
-                    echo "<span". $tooltip . ">". $duration  . "</span>";
-                echo "</td>";
-                echo "<td>{$v->price}</td>";
-                echo "<td>";
-                    echo  "<button data-id='{$v->id}' data-price='{$v->price}' data-duration='{$v->duration}' data-description='{$v->description}' class='btn btn-sm btn-success edit-vorodi'>ویرایش</button>";
-                    echo "<button class='btn btn-sm btn-danger delete-vorodi' data-id={$v->id}'>حذف</button>";
+                    if(check_perm('edit_duration')){
+                        echo  "<button data-id='{$v->id}' data-price='{$v->price}' data-duration='{$v->duration}' data-description='{$v->description}' class='btn btn-sm btn-success btn-circle edit-vorodi'>ویرایش</button>";
+                    }
+                    if(check_perm('delete_duration')){
+                        echo "<button class='btn btn-sm btn-danger btn-circle delete-vorodi' data-id={$v->id}'>حذف</button>";
+                    }
                 echo "</td>";
                 echo "</tr>";
             }
@@ -89,7 +96,7 @@
                             </script>
                             <div class="form-group">
                                 <label for="vorodi-price" class="col-form-label">قیمت</label>
-                                <input type="text" class="form-control" id="vorodi-price" name="vorodi-price">
+                                <input type="text" class="form-control persian-number" id="vorodi-price" name="vorodi-price">
                                 <span id="vorodi-price-error"></span>
                             </div>
                     </div>
@@ -103,17 +110,41 @@
                 </div>
             </div>
         </div>
+        
         <script>
             $(document).ready(function () {
+                
                 $("#vorodi-table").DataTable({
                     "ordering": false,
-                    "searching":false
-                    // columnDefs: [{
+                    "searching":false,
+                    "language": {
+                        "sEmptyTable":     "هیچ داده ای در جدول وجود ندارد",
+                        "sInfo":           "نمایش _START_ تا _END_ از _TOTAL_ رکورد",
+                        "sInfoEmpty":      "نمایش 0 تا 0 از 0 رکورد",
+                        "sInfoFiltered":   "(فیلتر شده از _MAX_ رکورد)",
+                        "sInfoPostFix":    "",
+                        "sInfoThousands":  ",",
+                        "sLengthMenu":     "نمایش _MENU_ رکورد",
+                        "sLoadingRecords": "در حال بارگزاری...",
+                        "sProcessing":     "در حال پردازش...",
+                        "sSearch":         "جستجو:",
+                        "sZeroRecords":    "رکوردی با این مشخصات پیدا نشد",
+                        "oPaginate": {
+                          "sFirst":    "ابتدا",
+                          "sLast":     "انتها",
+                          "sNext":     "بعدی",
+                          "sPrevious": "قبلی"
+                        },
+                        "oAria": {
+                          "sSortAscending":  ": فعال سازی نمایش به صورت صعودی",
+                          "sSortDescending": ": فعال سازی نمایش به صورت نزولی"
+                        }
+                    },                    // columnDefs: [{
                     //     orderable: false,
                     //     targets: "no-sort"
                     // }]
                 });
-
+<?php if(check_perm('add_duration')): ?>
                 $("#new-vorodi").click(function () {
                     $("#vorodi-validaions").html("");
                     $("#vorodi-duration").val("");
@@ -163,7 +194,9 @@
                         form[0].submit();
                     }
                 });
+<?php endif; ?>
 
+<?php if(check_perm('edit_duration')): ?>
                 $(".edit-vorodi").on('click', function () {
                     $("#vorodi-validaions").html("");
                     $("#vorodi-duration").val($(this).attr("data-duration"));
@@ -176,7 +209,9 @@
                     $("#duration-form-group").hide();
                     $("#vorodi-modal").modal();
                 });
+<?php endif; ?>
 
+<?php if(check_perm('delete_duration')): ?>
                 $('.delete-vorodi').on('click',function(e)
                 {
                         e.preventDefault();
@@ -214,6 +249,8 @@
                         });
 
                 });
+<?php endif; ?>                
+
             });
         </script>
     </div>

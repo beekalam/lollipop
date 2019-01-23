@@ -1,11 +1,14 @@
-<div class="portlet box blue-hoki">
+<div class="portlet box blue-hoki" id="prices_box">
     <div class="portlet-title">
         <div class="caption">
             <i class="fa fa-cogs"></i>هزینه ها
         </div>
         <div class="actions">
-            <a href="javascript:;" class="btn btn-default btn-sm show-add-modal" data-action="insert">
-                <i class="fa fa-plus"></i> اضافه </a>
+            <?php if(check_perm('add_extra_service')): ?>
+                <a href="javascript:;" class="btn btn-default btn-sm show-add-modal" data-action="insert">
+                    <i class="fa fa-plus"></i> اضافه 
+                </a>
+            <?php endif; ?>
         </div>
     </div>
     <div class="portlet-body">
@@ -15,18 +18,27 @@
                 <th>عنوان</th>
                 <th>قیمت</th>
                 <th>دسته</th>
-                <th class="no-sort">actions</th>
+                <th class="no-sort">عملیات</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody class="persian-number">
             <?php
-            $fmt = "<tr><td>%s</td><td>%s</td><td>%s</td><td>%s %s</td></tr>";
-            $delete_btn_fmt = "<button data-id='%s' class='btn btn-sm btn-success delete-price'>delete</button>";
-            $edit_btn_fmt = "<button data-id='%s' class='btn btn-sm btn-danger edit-price' data-cat-id='%s' data-description='%s' data-price='%s' data-action='update'>edit</button>";
+            $delete_btn_fmt = "<button data-id='%s' class='btn btn-sm btn-circle btn-danger delete-price'>حذف</button>";
+            $edit_btn_fmt = "<button data-id='%s' class='btn btn-sm btn-circle btn-success edit-price' data-cat-id='%s' data-description='%s' data-price='%s' data-action='update'>ویرایش</button>";
             foreach ($prices as $v) {
-                $delete_btn = sprintf($delete_btn_fmt, $v->id);
-                $edit_btn = sprintf($edit_btn_fmt, $v->id, $v->cat_id, $v->description, $v->price);
-                echo sprintf($fmt, $v->description, $v->price, $v->cat_name, $delete_btn, $edit_btn);
+                
+                echo "<tr>";
+                    et("td",$v->description);
+                    et("td", format_currency($v->price));
+                    et("td", $v->cat_name);
+                    echo "<td>";
+                        echo check_perm('delete_extra_service') ?  sprintf($delete_btn_fmt, $v->id) : "";
+                        
+                        echo check_perm('edit_extra_service') ?  
+                                sprintf($edit_btn_fmt, $v->id, $v->cat_id, $v->description, $v->price) : "";
+                        
+                    echo "</td>";
+                echo "</tr>";
             }
             ?>
             </tbody>
@@ -35,13 +47,19 @@
             $(document).ready(function () {
                 $("#prices-table").DataTable({
                     "ordering": true,
-                    "searching":false,
-                    "paging": false,
+                    "searching":true,
+                    "paging": true,
                     "info":false,
                     columnDefs: [{
                         orderable: false,
                         targets: "no-sort"
-                    }]
+                    }],
+                      "language": {
+                        "emptyTable": "هیچ رکوردی یافت نشد",
+                        'search':'جستجو',
+                        'info':'نمایش صفحه _PAGE_ از _PAGES_',
+                        'infoEmpty':'هیچ رکوردی یافت نشده'
+                    }                    
                 });
             });
         </script>
@@ -99,6 +117,7 @@
 
     $(document).ready(function () {
 
+<?php if(check_perm('edit_extra_service')): ?>
         $(".edit-price").click(function () {
             $(".category-select option[value='" + $(this).attr("data-cat-id") + "']").attr('selected', 'selected');
             $("#item-description").val($(this).attr("data-description"));
@@ -109,6 +128,7 @@
                 $("#modal").modal();
             }, 100);
         });
+<?php endif; ?>
 
         $(".show-add-modal").click(function () {
             $("#item-description").val("");
@@ -116,6 +136,8 @@
             $("#action").val("insert");
             $("#modal").modal();
         });
+
+<?php if(check_perm('add_extra_service')): ?>        
 
         $(document).on('click', '#add-new-price', function () {
             var action = $("#action").val();
@@ -172,7 +194,9 @@
             }); //$.ajax
 
         });
+<?php endif; ?>
 
+<?php if(check_perm('add_extra_service')): ?>
         $(".delete-price").click(function (e) {
             e.preventDefault();
             // alert("in delete_price");
@@ -208,6 +232,7 @@
                 });
 
         });
+<?php endif; ?>
 
 
     });

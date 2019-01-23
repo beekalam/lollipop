@@ -37,7 +37,7 @@
     padding-bottom: 15px;
 }
 </style>
-<table style="table-responsive" class="factor_table" width="100%">
+<table style="table-responsive" class="factor_table persian-number" width="100%">
                 <tbody>
                 <tr>
                     <td colspan="5" class="factor_header_td">
@@ -76,7 +76,7 @@
                                                 تاریخ صدور :
                                             </td>
                                             <td class="persian_digits factor_value_td" style="text-align:left;">
-                                                <?php echo unix_timestamp_to_jalali(time()); ?>
+                                                <?php echo convert_gregorian_iso_to_jalali_iso($factor_date); ?>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -173,7 +173,7 @@
                     </td>
                     <td class="factor_rows_td persian_digits" style="">
                         <?php echo number_format($v->num * $v->price); ?> &nbsp;
-تومان
+ریال
                     </td>
                 </tr>
                 <?php endforeach; ?>
@@ -192,10 +192,11 @@
                     </td>
                     <td class="factor_rows_td persian_digits" style="">
                         <?php echo number_format($vorodi); ?> &nbsp;
-تومان
+ریال
                     </td>
                 </tr>                
-<!--                  <tr>
+                <?php if($discount_percent): ?>
+                 <tr>
                     <td class="factor_rows_tdb" colspan="2">
 شرح تخفیف :
                     </td>
@@ -203,12 +204,14 @@
 تخفیف :
                     </td>
                     <td class="factor_rows_tdb persian_digits" style="width:120px">
-
+                        <?php echo number_format($discount); ?> ریال
                     </td>
                 </tr>
+                <?php endif; ?>
                 
-                <tr> -->
-<!--                     <td class="factor_rows_tdb" colspan="2">
+<!--                
+                <tr>
+     <td class="factor_rows_tdb" colspan="2">
 شرح بستانکاری :
 
                     </td>
@@ -248,7 +251,12 @@
 قابل پرداخت :
                     </td>
                     <td class="factor_rows_tdb persian_digits" style="">
-                        <?php echo number_format($total); ?>&nbsp;
+                    <?php 
+                        if($discount_percent)
+                            echo number_format($total_with_discount);
+                        else
+                            echo number_format($total);
+                     ?>
 ریال
                     </td>
                 </tr>
